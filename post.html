@@ -4,28 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>文章 · Deyi</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 </head>
 <body>
-  <header class="top">
-    <a class="logo" href="index.html">Deyi</a>
-    <nav><a href="index.html#posts">所有文章</a></nav>
-  </header>
-
-  <main class="article">
-    <header class="article-head">
-      <h1 id="title">加载中…</h1>
-      <p id="meta" class="meta"></p>
-    </header>
+  <main>
+    <p class="back"><a href="index.html">← Deyi</a></p>
+    <h1 id="title">加载中…</h1>
+    <p id="meta" class="meta"></p>
     <div id="content" class="prose"></div>
   </main>
-
-  <footer class="foot">© <span id="year"></span> Deyi</footer>
   <script src="assets/app.js"></script>
-  <script>renderPost(); document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>renderPost();</script>
 </body>
 </html>
