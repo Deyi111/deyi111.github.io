@@ -1,13 +1,12 @@
 :root {
-  --bg: #f2f4f7;
-  --ink: #14181f;
-  --muted: #5b6472;
-  --line: #d9dee6;
-  --accent: #2b4bff;
-  --code: #e6eaf0;
-  --display: 'Bricolage Grotesque', 'Noto Sans SC', system-ui, sans-serif;
-  --body: 'Noto Sans SC', system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+   --bg: #ffffff;
+  --ink: #111111;
+  --muted: #666666;
+  --line: #e5e5e5;
+  --accent: #0645ad;
+  --code: #f4f4f4;
 }
+.wordmark { color: var(--ink); }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #11151c; --ink: #e8ecf3; --muted: #98a2b3;
