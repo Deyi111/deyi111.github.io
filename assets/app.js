@@ -1,5 +1,5 @@
 async function getPosts() {
-  const res = await fetch('posts/posts.json');
+  const res = await fetch('posts/posts.json', { cache: 'no-cache' });
   const posts = await res.json();
   return posts.sort((a, b) => b.date.localeCompare(a.date));
 }
@@ -31,7 +31,7 @@ async function renderPost() {
     const posts = await getPosts();
     const post = posts.find(p => p.slug === slug);
     if (!post) throw new Error('not found');
-    const md = await (await fetch(`posts/${post.slug}.md`)).text();
+    const md = await (await fetch(`posts/${post.slug}.md`, { cache: 'no-cache' })).text();
     document.title = `${post.title} · Deyi`;
     title.textContent = post.title;
     meta.textContent = [post.date, ...(post.tags || [])].join('  ·  ');
