@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deyi</title>
+  <meta name="description" content="Deyi 的个人博客">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="index.html">Deyi</a>
+    <nav>
+      <a href="#posts">文章</a>
+      <a href="#about">关于</a>
+      <a href="https://github.com/你的GitHub用户名" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="wordmark">Deyi</h1>
+      <p class="tagline">写代码，也记录生活里值得留下来的东西。</p>
+    </section>
+
+    <section id="posts" class="posts">
+      <h2>文章</h2>
+      <ul id="post-list" class="post-list" aria-live="polite">
+        <li class="empty">加载中…</li>
+      </ul>
+    </section>
+
+    <section id="about" class="about">
+      <h2>关于</h2>
+      <p>我是 Deyi。这里写一段简短的自我介绍：你在做什么、对什么感兴趣、怎么联系你。</p>
+      <p><a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="foot">© <span id="year"></span> Deyi</footer>
+  <script src="assets/app.js"></script>
+  <script>renderList(); document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
