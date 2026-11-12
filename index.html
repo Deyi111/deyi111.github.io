@@ -5,42 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Deyi</title>
   <meta name="description" content="Deyi 的个人博客">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header class="top">
-    <a class="logo" href="index.html">Deyi</a>
-    <nav>
-      <a href="#posts">文章</a>
-      <a href="#about">关于</a>
-    </nav>
-  </header>
-
   <main>
-    <section class="hero">
-      <h1 class="wordmark">Deyi</h1>
-      <p class="tagline">一个搭了博客的人。写的慢，改得少，偶尔自以为是，偶尔自我怀疑，长期一直🐂逼。更新看心情，标准不看心情</p>
-    </section>
+    <h1>Deyi</h1>
+    <p class="intro">这里是Deyi的博客</p>
 
-    <section id="posts" class="posts">
-      <h2>文章</h2>
-      <ul id="post-list" class="post-list" aria-live="polite">
-        <li class="empty">加载中…</li>
-      </ul>
-    </section>
+    <h2>文章</h2>
+    <ul id="post-list" class="post-list">
+      <li class="empty">加载中…</li>
+    </ul>
 
-    <section id="about" class="about">
-      <h2>关于</h2>
-      <p>我是 Deyi。我没什么好介绍的，一个还在练笔的人。唯一敢说的是：我对“随便写写”这件事，不太随便。
-        我暂时狂不起来，就先从不好好谦虚开始。</p>
-    </section>
+    <h2>关于我</h2>
+    <p>建了个博客，用来写字。
+      没想过靠这个教人做事，也没指望提供什么情绪价值。
+      写得慢，是因为不想废话。毕竟大家都挺忙的，糊弄文字，最后糊弄的也是自己。
+      这里的文章，目前主要用来证明两件事：一，我很无聊，我要找点事情干。二，我不是弱智，我会识字甚至会写。
+      更新看我还在世没</p>
+
   </main>
 
-  <footer class="foot">© <span id="year"></span> Deyi</footer>
   <script src="assets/app.js"></script>
-  <script>renderList(); document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>renderList();</script>
 </body>
 </html>
